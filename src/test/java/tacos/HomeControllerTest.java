@@ -19,7 +19,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 public class HomeControllerTest {
 @Autowired
-    private MockMvc mockMvc;
+     private MockMvc mockMvc;
 
 @Test
     public void testHomePage() throws Exception {
