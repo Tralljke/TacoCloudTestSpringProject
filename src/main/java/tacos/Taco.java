@@ -7,10 +7,15 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 // tag::allButValidation[]
 import lombok.Data;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
 
 @Data
 public class Taco {
+    private Long id;
 
+    private Date createdAt;
     // end::allButValidation[]
     @NotNull
     @Size(min=5, message="Name must be at least 5 characters long")
